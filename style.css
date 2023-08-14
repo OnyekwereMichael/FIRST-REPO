@@ -1,0 +1,343 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+:root{
+--BGCOLOR: darkblue;
+--LINKCOLOR: #fff;
+--FONT-COLOR: black;
+--FONT-WEIGHT: BOLD;
+--ACTIVE-COLOR: GREEN;
+--HOVER-COLOR: GOLD;
+--FOCUS-COLOR: gold;
+--FONT-SIZE: 12PX;
+--HOVER-FONT-SIZE: 18PX;
+
+
+}
+
+body{
+    background-color: white;
+    margin: 0 auto;
+    max-width: 800px;
+    min-height: 100vh;
+}
+html{
+    background-color: lightseagreen;
+}
+
+header h3{
+color: var(--LINKCOLOR);
+  padding: 2px;
+}
+ul{
+    text-align: right;
+    list-style-type: none;
+    padding: 0.2rem;
+}
+li{
+    display: inline-block;
+    margin-inline: 0.5rem;
+  
+    
+}
+li a{
+    color: var(--LINKCOLOR);
+    text-decoration: none;
+    font-weight: var(--FONT-WEIGHT);
+    font-size: var(--FONT-SIZE);
+     }
+li a:hover{
+    color: var(--HOVER-COLOR);
+    text-decoration: underline;
+    font-size: var(--HOVER-FONT-SIZE);
+    border: 2PX solid #000;
+    border-radius: 7PX;
+    box-shadow: 0 0 3px 3px gold;
+     }
+li a:ACTIVE{
+    color: var(--ACTIVE-COLOR);
+    text-decoration: underline;
+   
+     }
+li a:focus{
+    
+    text-decoration: underline;
+    background-color: var(--FOCUS-COLOR);
+   
+     }
+.header__1{
+    background-color: var(--BGCOLOR);
+    padding: 5px;
+}
+
+
+
+.display{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero{
+    position: relative;
+}
+.hero{
+    position: absolute;
+    color: var(--LINKCOLOR);
+    background-color: var(--HOVER-COLOR);
+    margin: 3rem;
+    
+    font-size: x-large;
+    width: 20rem;
+      transform: translateY(200px);  
+    padding: 6px;
+    animation-name: sloop;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+   
+}
+
+@keyframes sloop {
+    0%{
+        top: 20px;
+    tranform: rotateX(360deg) translateY(200px);
+    }
+    80%{
+        top: 20px;
+    
+       transform: rotateY(360deg) scaleX(1.2) scaleY(1.2) translateX(200px);
+    }
+
+    100%{
+        top: 0;
+      background-color: var(--BGCOLOR);
+    }
+}
+
+.main__h2{
+    text-align: center;
+    color: var(--BGCOLOR);
+    padding: 15px;
+}
+.main__h3{
+    padding: 5px;
+    margin: 5px;
+    font-weight: var(--FONT-WEIGHT);
+}
+
+.main__div{
+  border: 2px solid #000;
+  min-width: 20px;
+ height: 20%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px var(--BGCOLOR);
+  justify-content: center;
+ 
+  
+}
+.main__div2{
+  border: 2px solid #000;
+  min-width: 20px;
+  height: 86%;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 2px var(--BGCOLOR);
+  background-color: var(--BGCOLOR);
+  justify-content: center;
+ 
+
+}
+main > div{
+    display: flex;
+}
+
+
+footer{
+background:linear-gradient(hsla(239, 95%, 17%, 0.8), hsl(239, 95%, 17%, 0.8)), url(./close-up-of-a-smart-young-woman-coding-1.jpg);
+    margin-top: 15px;
+    padding: 15px;
+    filter: opacity(0.8);
+    height: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+   
+}
+
+footer  h4{
+    color: var(--LINKCOLOR);
+    font-size: 16px;
+    margin: 5px;
+ 
+}
+footer p{
+    color: var(--LINKCOLOR);
+    font-size: 12px;
+    padding: 5px;
+    font-weight:  var(--FONT-WEIGHT);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+}
+
+footer > div {
+    width: 33.3%;
+}
+
+.footer__3 > div{
+margin: 10px;
+overflow-x: hidden;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 3px
+}
+
+.footer__3 > div:nth-child(4){
+    background-color: var(--BGCOLOR);
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+overflow-x: hidden;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 3px;
+    max-width: 70%;
+ 
+    
+}
+
+
+/* page 2 stylling */
+
+.sec__1{
+    margin: 10px;
+    padding: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    column-count: 3;
+    column-gap: 1; 
+    font-weight: 600;
+}
+span{
+    background-color: gray;
+    
+    font-weight: 900;
+    font-size: 15px;
+}
+
+/* page 3 stylling */
+
+
+.sec__3{
+    margin: 10px auto;
+    padding: 30px;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #000;
+  font-weight: 700;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sec__4{
+    border: 2px solid black;
+    border-radius: 6px;
+    display: block;
+   
+    width: 78%;
+    padding: 80px;
+    margin-left: 50px;
+    color: #000;
+  font-weight: 700;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header h1{
+    font-weight: 700;
+    margin: 25px;
+    padding: 25px;
+}
+header p{
+    font-weight: 600;
+    margin-top: -40px;
+    margin-left: 50px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  
+
+}
+
+
+
+.button__1{
+    background-color: var(--BGCOLOR);
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin: 40px;
+    width: 100px;
+    color: var(--LINKCOLOR);
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
