@@ -128,6 +128,7 @@ li a:focus{
 }
 
 .main__h2{
+  
     text-align: center;
     color: var(--BGCOLOR);
     padding: 15px;
@@ -136,6 +137,11 @@ li a:focus{
     padding: 5px;
     margin: 5px;
     font-weight: var(--FONT-WEIGHT);
+}
+
+
+main > div{
+  display: flex;
 }
 
 .main__div{
@@ -147,7 +153,8 @@ li a:focus{
   border-radius: 5px;
   box-shadow: 0 0 2px 2px var(--BGCOLOR);
   justify-content: center;
- 
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ font-weight: 600;
   
 }
 .main__div2{
@@ -160,12 +167,10 @@ li a:focus{
   box-shadow: 0 0 2px 2px var(--BGCOLOR);
   background-color: var(--BGCOLOR);
   justify-content: center;
- 
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
-main > div{
-    display: flex;
-}
+
 
 
 footer{
@@ -217,7 +222,7 @@ input{
     text-decoration: none;
     text-align: center;
     margin: 10px;
-overflow-x: hidden;
+   overflow-x: hidden;
     border: 2px solid black;
     border-radius: 6px;
     padding: 3px;
@@ -238,8 +243,6 @@ overflow-x: hidden;
     font-weight: 600;
 }
 span{
-    
-    
     font-weight: 900;
     font-size: 15px;
 }
@@ -287,7 +290,7 @@ header h1{
     font-weight: 700;
     margin: 25px;
     padding: 25px;
-    animation: bg-animation 5s 1s infinite alternate ease-in-out forwards;
+    animation: bg-animation 4s 1s infinite alternate ease-in-out forwards;
 }
  header p{
     font-weight: 600;
@@ -295,7 +298,7 @@ header h1{
     margin-left: 50px;
     color: #000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-animation: bg-animation 5s 1s infinite alternate ease-in-out forwards;
+animation: bg-animation 4s 1s infinite alternate ease-in-out forwards;
 
 
 }
@@ -320,7 +323,12 @@ animation: bg-animation 5s 1s infinite alternate ease-in-out forwards;
     margin: 40px;
     width: 100px;
     color: var(--LINKCOLOR);
-    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+
+ 
 }
 
 
@@ -464,8 +472,32 @@ padding: 3px;
 
 
 
+/* page 5 */
+
+.answer{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px auto;
+ 
+  padding: 20px;
+  text-align: center;
+}
 
 
+
+.check{
+margin: 25px auto;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 50px;
+ 
+}
 
 
 
