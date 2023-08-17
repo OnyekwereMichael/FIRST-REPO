@@ -238,10 +238,19 @@ overflow-x: hidden;
     font-weight: 600;
 }
 span{
-    background-color: gray;
+    
     
     font-weight: 900;
     font-size: 15px;
+}
+
+h2{
+    text-decoration: underline;
+   
+    padding: 5px;
+    display: block;
+    text-align: center;
+   
 }
 
 /* page 3 stylling */
@@ -254,38 +263,53 @@ span{
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
-  color: #000;
+  color: var(--BGCOLOR);
   font-weight: 700;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+
 .sec__4{
+ display: block;
+   height: 15rem;
+   margin: 1rem;
+    width: 20rem;
     border: 2px solid black;
-    border-radius: 6px;
-    display: block;
-   
-    width: 78%;
-    padding: 80px;
-    margin-left: 50px;
-    color: #000;
-  font-weight: 700;
-font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sec__4::-webkit-scrollbar{
+    width: 0%
 }
 
 header h1{
     font-weight: 700;
     margin: 25px;
     padding: 25px;
+    animation: bg-animation 5s 1s infinite alternate ease-in-out forwards;
 }
-header p{
+ header p{
     font-weight: 600;
     margin-top: -40px;
     margin-left: 50px;
+    color: #000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
+animation: bg-animation 5s 1s infinite alternate ease-in-out forwards;
+
 
 }
 
+@keyframes bg-animation {
+    0%{
+        background-position: 0%;
+    }
+
+    100%{
+        background-position: 400%;
+       color: var(--BGCOLOR);
+    }
+}
 
 
 .button__1{
@@ -304,6 +328,136 @@ header p{
 
 
 
+/* page 4 stylling */
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+  }                      
+  .card{
+    background: grey;
+    width: 220px;
+    margin: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+    border: 2px  black;
+    box-shadow: 0 0 5px 5px var(--BGCOLOR);
+  }
+
+  
+
+
+
+  .img1{
+    height: 200px;
+    width: 100%;
+    background: url(female-programmer-working-on-new-project.jpg);
+    border-radius: 5px;
+    background-size: cover;
+
+  }
+
+  .img2{
+    height: 200px;
+    width: 100%;
+    background: url(software-developer-sitting-at-his-office-desk-working-on-laptop-wearing-earphones-man-wearing-spectacles-working-on-laptop-computer-in-office-P53H1R.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img3{
+    height: 200px;
+    width: 100%;
+    background: url(img\ 333.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img4{
+    height: 200px;
+    width: 100%;
+    background: url(img\ 5555\ \(2\).jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img5{
+    height: 200px;
+    width: 100%;
+    background: url(img\ 888.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img6{
+    height: 200px;
+    width: 100%;
+    background: url(img\ 4444.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img7{
+    height: 200px;
+    width: 100%;
+    background: url(img\ 16.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img8{
+    height: 200px;
+    width: 100%;
+    background: url(img\ 777.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img9{
+    height: 200px;
+    width: 100%;
+    background: url(img\ 14.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img10{
+    height: 200px;
+    width: 100%;
+    background: url(img\ 11.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img11{
+    height: 200px;
+    width: 100%;
+    background: url(IMG_20221224_131441.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+  .img12{
+    height: 200px;
+    width: 100%;
+    background: url(img\ 13.jpg);
+    border-radius: 5px;
+    background-size: cover;
+  }
+
+  .link{
+background-color: #000;
+  color: whitesmoke;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  padding: 3px;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .title{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   text-align: center;
+   font-weight: 700;
+padding: 3px;
+  }
 
 
 
