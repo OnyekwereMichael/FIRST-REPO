@@ -97,6 +97,7 @@ li a:focus{
     background-color: var(--HOVER-COLOR);
     margin: 3rem;
     
+    
     font-size: x-large;
     width: 20rem;
       transform: translateY(200px);  
